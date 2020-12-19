@@ -1,0 +1,23 @@
+{
+  "newTask": {
+    "title": "Нове завдання",
+    "i_task_name": "Заголовок завдання...",
+    "i_task_description": "Опис завдання...",
+    "subtask": "Підзадачі",
+    "i_subtask": "Нова підзадача..."
+  },
+  "editTask": {
+    "title": "Редагування",
+    "i_task_name": "Заголовок завдання..."
+  },
+  "viewTask": {
+    "title": "Заголовок",
+    "description": "Опис",
+    "subtasks": "Пізадачі"
+  },
+  "select_tags": "...",
+  "btns": {
+    "btn_save": "Додати",
+    "btn_edit": "Зберегти"
+  }
+}

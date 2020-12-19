@@ -1,0 +1,36 @@
+{
+  "switch": {
+    "todo": "Завдання",
+    "budget": "Бюджет"
+  },
+  "alert": {
+    "success": "Успішно",
+    "error": "Помилка"
+  },
+  "login": {
+    "title": "Авторизація",
+    "email_placeholder": "Пошта",
+    "password": "Пароль",
+    "btns": {
+      "join": "Увійти"
+    },
+    "prompt": "Не маєте аккаунта?"
+  },
+  "registration": {
+    "title": "Приєднуйся до нас",
+    "firstname": "Як тебе звати?",
+    "email_placeholder": "Пошта",
+    "password": "Пароль",
+    "password_repeat": "Повторіть пароль",
+    "btns": {
+      "join": "Приєднатись"
+    },
+    "prompt": "Є аккаунта?"
+  },
+  "languageblock": {
+    "darkmode": "Нічний режим",
+    "language": "Мова",
+    "login": "Авторизуватись",
+    "logout": "Вийти"
+  }
+}

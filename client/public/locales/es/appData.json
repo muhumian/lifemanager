@@ -1,0 +1,39 @@
+{
+  "switch": {
+    "todo": "Quehaceres",
+    "budget": "Presupuesto"
+  },
+  "alert": {
+    "success": "Éxito",
+    "error": "Error"
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "email_placeholder": "Tu correo electrónico",
+    "password": "Contraseña",
+    "btns": {
+      "join": "Entrar"
+    },
+    "prompt": "¿No tienes una cuenta?"
+  },
+  "registration": {
+    "title": "Únete a nosotros",
+    "firstname": "¿Como te llamo?",
+    "email_placeholder": "Tu correo electrónico",
+    "password": "Contraseña",
+    "password_repeat": "Repite la contraseña",
+    "btns": {
+      "join": "Unirse"
+    },
+    "prompt": "¿Ya tienes una cuenta?"
+  },
+  "errors": {
+    "login": "bitch"
+  },
+  "languageblock": {
+    "darkmode": "Modo nocturno",
+    "language": "Idioma",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión"
+  }
+}

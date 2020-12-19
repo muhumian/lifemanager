@@ -1,0 +1,23 @@
+{
+  "newTask": {
+    "title": "New task",
+    "i_task_name": "Task name...",
+    "i_task_description": "Task description...",
+    "subtask": "Subtasks",
+    "i_subtask": "New subtask..."
+  },
+  "editTask": {
+    "title": "Editing",
+    "i_task_name": "Edit title..."
+  },
+  "viewTask": {
+    "title": "Title",
+    "description": "Description",
+    "subtasks": "Subtasks"
+  },
+  "select_tags": "Task description...",
+  "btns": {
+    "btn_save": "Add",
+    "btn_edit": "Save"
+  }
+}

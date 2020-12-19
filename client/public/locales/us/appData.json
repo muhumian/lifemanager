@@ -1,0 +1,39 @@
+{
+  "switch": {
+    "todo": "Todo",
+    "budget": "Budget"
+  },
+  "alert": {
+    "success": "Success",
+    "error": "Error"
+  },
+  "login": {
+    "title": "Log in",
+    "email_placeholder": "Your email",
+    "password": "Password",
+    "btns": {
+      "join": "Enter"
+    },
+    "prompt": "Don't have an account?"
+  },
+  "registration": {
+    "title": "Join to us",
+    "firstname": "How to call you?",
+    "email_placeholder": "Your email",
+    "password": "Password",
+    "password_repeat": "Repeat the password",
+    "btns": {
+      "join": "Join"
+    },
+    "prompt": "Already have an account?"
+  },
+  "errors": {
+    "login": "bitch"
+  },
+  "languageblock": {
+    "darkmode": "Night mode",
+    "language": "Language",
+    "login": "Log in",
+    "logout": "Log out"
+  }
+}

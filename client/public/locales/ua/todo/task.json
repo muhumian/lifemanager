@@ -13,7 +13,7 @@
   "viewTask": {
     "title": "Заголовок",
     "description": "Опис",
-    "subtasks": "Пізадачі"
+    "subtasks": "Підзадачі"
   },
   "select_tags": "...",
   "btns": {

@@ -76,7 +76,7 @@ const Registration = () => {
             if (response.data.result) {
                 dispatch(setUser(response.data.user));
                 dispatch(setAlert({messageKey: 'success', status: true}));
-                // RedirectTo(history, '/');
+                RedirectTo(history, '/todo');
             } else {
                 dispatch(setAlert({messageKey: 'error', status: true}));
                 dispatch(setAppError(response.data.errorMessage));

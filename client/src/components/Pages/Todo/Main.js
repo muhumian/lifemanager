@@ -15,15 +15,17 @@ import {RedirectTo} from "../../App/Functions/redirect";
 //components
 import ListOfTasks from "./ListOfTasks";
 import Switch from "../../App/Switch/Switch";
+import {useSelector} from "react-redux";
 
 export default function Main() {
 
     const {t} = useTranslation('todo/main');
+    const user = useSelector(state => state.user);
     let history = useHistory();
 
     return (
         <>
-            <Title>{t("title")} 👋</Title>
+            <Title>{t("title")}, {user.name} 👋</Title>
             {/*<Switch/>*/}
             <ListOfTasks/>
             <AddCancelContainer>

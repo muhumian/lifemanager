@@ -54,7 +54,7 @@ const CreateTask = () => {
     async function newTask(e) {
         e.preventDefault();
 
-        // if (checkTask(task, setError)) {
+        if (checkTask(task, setError)) {
             const response = await AddToDB(task);
 
             if (response.data.result) {
@@ -64,7 +64,7 @@ const CreateTask = () => {
                 dispatch(setAlertNew('error', true));
                 dispatch(setAppError(response.data.errorMessage));
             }
-        // }
+        }
     }
 
     useEffect(() => {

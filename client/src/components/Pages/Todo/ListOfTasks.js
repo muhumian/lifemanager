@@ -61,6 +61,7 @@ const TaskInfo = styled.div`
   
   span{
     width: 100%;
+    word-break: break-word;
   }
 `;
 

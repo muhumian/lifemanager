@@ -11,7 +11,6 @@ export const DetailTitle = styled.div`
   margin-bottom: 5px;
   font-size: ${({theme}) => theme.style.fontSizes.s};
   font-weight: 600;
-  word-break: break-word;
 `;
 
 export const DetailInfo = styled.div`
@@ -20,12 +19,11 @@ export const DetailInfo = styled.div`
   margin-bottom: 10px;
   display: flex;
   align-items: center;
+  word-break: break-word;
   
   span{
     width: 100%;
-    word-break: break-word;
     padding-right: 10px;
-    word-break: break-word;
     text-decoration: ${(props) => props.done ? "none" : "line-through"};
   }
   

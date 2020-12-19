@@ -88,9 +88,6 @@ const CreateTask = () => {
                 }
                 <Textarea task={task} dispatch={dispatch}/>
 
-                {/*/!*<MultiSelect tags={tags} setTags={setTags}/>*!/*/}
-                {/*<DatePicker value={task.date} onChange={setDate} dispatch={dispatch}/>*/}
-
                 <AddCancelContainer btnType="back">
                     <button className="back" onClick={(e) => {
                         e.preventDefault();

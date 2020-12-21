@@ -1,18 +1,22 @@
 import React, {useState, useRef} from 'react';
 import styled from 'styled-components';
-import InputTextareaSharedStyle from "../Shared/css/classicField";
 import TextareaAutosize from 'react-textarea-autosize';
-import {BiSubdirectoryRight} from 'react-icons/bi'
-import FormNewTagContainer from "../Form/Select/FormNewTagContainer";
-import {setDescription, updateSubtaskStatus} from "../../../actions/todo/tasks/setTask"
-import {addSubTask, deleteSubTask} from "../../../actions/todo/tasks/setTask"
+import {setDescription, updateSubTask, updateSubtaskStatus} from "../../../actions/todo/tasks/setTask"
 import {useTranslation} from "react-i18next";
 
+//actions
+import {addSubTask, deleteSubTask} from "../../../actions/todo/tasks/setTask"
+
 //styles
-import {SubtasksContainer, DetailTitle, DetailInfo, SubIcon} from "../Shared/subtasks";
-import {IconBorder, IconDelete} from "../Shared/icons";
+import {SubtasksContainer, DetailTitle, DetailInfo, SubIcon} from "../../../styles/App/Shared/subtasks";
+import {IconBorder, IconDelete} from "../../../styles/App/Shared/icons";
+import InputTextareaSharedStyle from "../../../styles/App/Shared/css/classicField";
+import FormNewTagContainer from "../../../styles/App/Form/Select/FormNewTagContainer";
+
+//icons
 import {BiCheck} from "react-icons/bi";
 import {AiOutlineDelete} from "react-icons/ai";
+import {BiSubdirectoryRight} from 'react-icons/bi'
 
 const StyledTextarea = styled.div`
   ${InputTextareaSharedStyle};
@@ -61,7 +65,11 @@ const TextArea = ({task, dispatch}) => {
                                 <SubIcon>
                                     <BiSubdirectoryRight/>
                                 </SubIcon>
-                                <span>{subTask.title}</span>
+                                <input type="text" value={subTask.title} placeholder={t("newTask.subedittitle")} onChange={(e)=>{
+                                    let sbtsk = subTasks[index];
+                                    sbtsk.title = e.target.value;
+                                    dispatch(updateSubTask(index, sbtsk));
+                                }} />
 
                                 <IconBorder checked={subTask.status} onClick={() => dispatch(updateSubtaskStatus(subTasks, index))}>
                                     <BiCheck/>

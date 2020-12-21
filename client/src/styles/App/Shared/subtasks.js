@@ -26,6 +26,14 @@ export const DetailInfo = styled.div`
     padding-right: 10px;
     text-decoration: ${(props) => props.done ? "none" : "line-through"};
   }
+  input{
+      width: 100%;
+      margin-right: 10px;
+      outline: none;
+      font-size: 20px;
+      text-decoration: ${(props) => props.done ? "none" : "line-through"};
+      border: none;
+  }
   
   &:last-child{
     margin-bottom: 0;

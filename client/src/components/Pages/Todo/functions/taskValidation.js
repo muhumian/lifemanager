@@ -9,8 +9,11 @@ export const checkTask = (task, setError) => {
     } else if (!validator.isLength(task.description.title, {max: 150})) {
         setError({description: "Description can't be longer than 150 characters"});
         return false;
-    } else if (task.description.subtasks.length > 5){
+    } else if (task.description.subtasks.length > 5) {
         setError({description: "Maximum number of subtasks 5"});
+        return false;
+    } else if (task.description.subtasks.find(sub => sub.title.trim() === '')) {
+        setError({description: "Subtask can't be empty"});
         return false;
     }
 

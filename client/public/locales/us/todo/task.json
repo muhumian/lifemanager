@@ -4,7 +4,8 @@
     "i_task_name": "Task name...",
     "i_task_description": "Task description...",
     "subtask": "Subtasks",
-    "i_subtask": "New subtask..."
+    "i_subtask": "New subtask...",
+    "subedittitle": "Subtask title..."
   },
   "editTask": {
     "title": "Editing",

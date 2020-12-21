@@ -1,7 +1,6 @@
 import React, {useState, useRef} from 'react';
 import styled from 'styled-components';
 import {HiOutlineMenuAlt1} from "react-icons/hi";
-import userImg from "../../assets/profile/user.jpeg";
 import {RedirectTo} from "../App/Functions/redirect";
 import {useHistory} from "react-router";
 import {useDispatch, useSelector} from "react-redux";
@@ -12,6 +11,9 @@ import {MdExitToApp} from 'react-icons/md';
 import {ResetUser} from "../../actions/user/setUser";
 import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
+
+//icons
+import {MdAccountCircle} from 'react-icons/md'
 
 const StyledNavBar = styled.div`
   width: calc(100% - 40px);
@@ -62,6 +64,10 @@ const CirclePhoto = styled.div`
   background-size: cover;
   border-radius: 25px;
   cursor: pointer;
+  
+  svg{
+    font-size: 50px;
+  }
 `;
 
 const ToggleMode = styled.div`
@@ -96,9 +102,15 @@ const NavBar = () => {
 
 
             <AccModalContainer v={accMI} ref={accModalSetting}>
-                <CirclePhoto source={userImg} onClick={async () => {
-                    await setAccMI(!accMI)
-                }}/>
+                {/*<CirclePhoto source={userImg} onClick={async () => {*/}
+                {/*    await setAccMI(!accMI)*/}
+                {/*}}/>*/}
+
+                <CirclePhoto>
+                    <MdAccountCircle onClick={() => {
+                        setAccMI(!accMI)
+                    }}/>
+                </CirclePhoto>
 
                 <div className="accSettings">
                     <ToggleMode>

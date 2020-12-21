@@ -4,7 +4,8 @@
     "i_task_name": "Nombre de la tarea...",
     "i_task_description": "Descripción de la tarea...",
     "subtask": "Subtasks",
-    "i_subtask": "Nueva subtarea..."
+    "i_subtask": "Nueva subtarea...",
+    "subedittitle": "Título de la subtarea..."
   },
   "editTask": {
     "title": "Edición",

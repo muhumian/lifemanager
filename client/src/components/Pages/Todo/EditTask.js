@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-// import moment from 'moment'
 import {useHistory, useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {useTranslation} from "react-i18next";
@@ -19,7 +18,7 @@ import {AiOutlineDelete} from 'react-icons/ai';
 import {Input, Form, AddCancelContainer, Error} from '../../../styles/App/Elements/Form';
 import {Title} from '../../../styles/App/Elements/Form';
 import {VscClose} from "react-icons/vsc";
-import Textarea from "../../../styles/App/Elements/Textarea";
+import Textarea from "./Textarea";
 
 //functions
 import {RedirectTo} from "../../App/Functions/redirect";

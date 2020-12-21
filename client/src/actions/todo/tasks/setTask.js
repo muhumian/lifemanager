@@ -18,6 +18,10 @@ export const addSubTask = (subtasks, newSubTask) => {
     return dispatchWrapper("SET_SUB_TASKS", subtasks_clone);
 };
 
+export const updateSubTask = (index, subtask) => {
+    return dispatchWrapper("UPDATE_SUB_TASK", {index, subtask});
+};
+
 export const deleteSubTask = (subtasks, index) => {
     const subtasks_clone = subtasks.filter((s, i) => i !== index);
     return dispatchWrapper("SET_SUB_TASKS", subtasks_clone);

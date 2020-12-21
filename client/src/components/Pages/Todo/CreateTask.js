@@ -18,7 +18,7 @@ import {Input, Form, AddCancelContainer, Error} from '../../../styles/App/Elemen
 import {Title} from '../../../styles/App/Elements/Form';
 // import {Form} from '../../../styles/App/Elements/Form';
 // import {AddCancelContainer} from "../../../styles/App/Elements/Form";
-import Textarea from "../../../styles/App/Elements/Textarea";
+import Textarea from "./Textarea";
 
 //functions
 // import Alert from "../../../functions/alert";

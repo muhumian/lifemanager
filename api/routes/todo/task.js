@@ -14,6 +14,10 @@ router.post('/task/update/', auth.authenticateToken, (req, res) => {
 
     if (!validatedData) {
 
+        if (req.body.task.description.subtasks.length > 0) {
+            req.body.task.status = !!req.body.task.description.subtasks.find(s => s.status === true);
+        }
+
         Task.findOneAndUpdate({_id: req.body.task._id, owner: req.user.id}, req.body.task)
             .then(result => {
                 if (result) {
@@ -51,7 +55,7 @@ router.post('/tasks/add', auth.authenticateToken, (req, res) => {
 
     const validatedData = taskValidation(req.body);
 
-    if (!validatedData){
+    if (!validatedData) {
         const task = new Task({
             title: req.body.title,
             description: req.body.description,

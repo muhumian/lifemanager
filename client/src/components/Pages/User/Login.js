@@ -9,7 +9,7 @@ import {RedirectTo} from "../../App/Functions/redirect";
 
 //actions
 import {UserAuthorization} from "../../../actions/user/user";
-import {setAlert} from "../../../actions/Alert/alerts";
+import {setAlert, setAlertNew} from "../../../actions/Alert/alerts";
 import {resetAppError, setAppError} from "../../../actions/App/errorActions";
 import {setUser} from "../../../actions/user/setUser";
 
@@ -54,8 +54,8 @@ const Login = () => {
         if (checkUserData({email, password})) {
             const response = await UserAuthorization({email, password})
             if (response.data.result) {
-                dispatch(setAlert({messageKey: 'success', status: true}));
-                dispatch(setUser(response.data.user));
+                dispatch(setAlertNew('success', true));
+                dispatch(setUser(response.data.content));
             } else {
                 dispatch(setAppError(response.data.errorMessage));
             }

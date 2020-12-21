@@ -17,7 +17,7 @@ const authenticateToken = (req, res, next) => {
 
 const createUserToken = (id) => {
     return jwt.sign({id}, process.env.ACCESS_TOKEN_SECRET, {
-        expiresIn: 12000
+        expiresIn: 36000
     });
 };
 

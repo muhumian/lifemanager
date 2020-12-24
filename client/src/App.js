@@ -50,6 +50,7 @@ const App = () => {
     return (
         <Router>
             <NavBar/>
+
             <Wrapper>
                 <Switch>
                     <Route exact path="/">

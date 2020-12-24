@@ -2,6 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import {useHistory} from "react-router";
 import {RedirectTo} from "../Functions/redirect";
+import {Sidebar} from "../../Sidebar/Sidebar";
 
 const StyledWrapper = styled.div`
     width: calc(100% - 40px);
@@ -10,7 +11,17 @@ const StyledWrapper = styled.div`
     flex-direction: column;
     padding: 90px 20px 75px 20px;
     color: ${({theme}) => theme.mainColors.mainFontColor};
-    background: ${({theme}) => theme.mainColors.backgroundColor};
+    // background: ${({theme}) => theme.mainColors.backgroundColor};
+    
+    @media all and (min-width: 767px){
+       width: 70%;
+       max-width: 700px;
+       margin: 0 auto;
+    }
+    @media all and (min-width: 1000px){
+       width: 70%;
+       left: calc(350px - 20px);
+    }
 `;
 
 const Wrapper = ({children}) => {
@@ -84,6 +95,7 @@ const Wrapper = ({children}) => {
 
     return (
         <StyledWrapper ref={moveRef}>
+            {/*<Sidebar/>*/}
             {children}
         </StyledWrapper>
     )

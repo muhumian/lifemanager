@@ -17,7 +17,7 @@ import {BiSubdirectoryRight} from "react-icons/bi";
 import {BiCheck} from 'react-icons/bi'
 
 //styles
-import {AddCancelContainer} from "../../../styles/App/Elements/Form";
+import {AddCancelContainer, AddCancelContainerPopUp} from "../../../styles/App/Elements/Form";
 import {IconBorder} from "../../../styles/App/Shared/icons";
 import {DetailInfo, DetailTitle, SubIcon, SubtasksContainer} from "../../../styles/App/Shared/subtasks";
 
@@ -84,7 +84,7 @@ const PopUpDetails = ({detailTask, setDetailTask, pathBack}) => {
                 </SubtasksContainer>
             }
 
-            <AddCancelContainer>
+            <AddCancelContainerPopUp>
                 <button className="back" onClick={(e) => {
                     deleteTask(e);
                     dispatch(setEmpty());
@@ -99,7 +99,7 @@ const PopUpDetails = ({detailTask, setDetailTask, pathBack}) => {
                 <button className="ok" onClick={() => RedirectTo(history, `${pathBack.home}${pathBack.edit}`)}>
                     <MdModeEdit/>
                 </button>
-            </AddCancelContainer>
+            </AddCancelContainerPopUp>
 
         </PopUpContainer>
     )

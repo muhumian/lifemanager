@@ -76,4 +76,21 @@ export const AddCancelContainer = styled.div`
           padding-left: 20px;
         }
     }
+    
+  @media all and (min-width: 767px) and (max-width: 1000px){
+    width: 70%;
+  }
+  @media all and (min-width: 1000px){
+    width: 700px;
+  }
+`;
+
+export const AddCancelContainerPopUp = styled(AddCancelContainer)`
+    @media all and (min-width: 767px){
+      left: 15%;
+    }
+    @media all and (min-width: 1000px){
+      width: 700px;
+      left: calc((100% - 700px) / 2);
+    }
 `;

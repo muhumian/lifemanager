@@ -33,6 +33,15 @@ const StyledNavBar = styled.div`
   img{
     height: 30px;
   }
+  
+  @media all and (min-width: 767px) and (max-width: 1000px){
+    width: 70%;
+    left: calc(15% - 20px);
+  }
+  @media all and (min-width: 1000px){
+    width: 700px;
+    left: calc((100% - 740px)/2)
+  }
 `;
 
 const AccModalContainer = styled.div`

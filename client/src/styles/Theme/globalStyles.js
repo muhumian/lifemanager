@@ -20,6 +20,10 @@ const GlobalStyle = createGlobalStyle`
       -ms-overflow-style: none; 
       overflow: -moz-scrollbars-none; 
     }
+    
+    body{
+      background-color: ${({theme})=>theme.mainColors.backgroundColor};
+    }
 `;
 
 export default GlobalStyle;
